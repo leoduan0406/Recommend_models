@@ -134,6 +134,7 @@ if __name__ == "__main__":
     ibc = ItemBasedCF(os.getcwd() + '\\ratings.csv')  # 初始化数据
     ibc.ItemSimilarity()  # 计算物品相似度矩阵
     ibc.testRecommend(user="345")  # 单用户推荐
+    print("Hello...")
     print("%3s%20s%20s%20s%20s" % ('K', "recall", 'precision', 'coverage', 'popularity'))
     for k in [5, 10, 15, 20]:
         recall, precision = ibc.recallAndPrecision(k=k)
